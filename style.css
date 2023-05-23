@@ -1,0 +1,267 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F3F5FC;
+}
+
+header{
+    background-color: #0A3871;
+    padding: 20px 0;
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.input{
+    margin: 10px 0;
+}
+
+label{
+    display: block;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+#textoOriginal{
+    display: block;
+    padding: 10px 25px;
+    width: 55%;
+    height: 609px;
+    left: 40px;
+    right: 10px;
+    background-color: #F3F5FC;
+    border-color: #F3F5FC;
+}
+
+.aviso{
+    position: absolute;
+    width: 25%;
+    height: 16px;
+    left: 9.8%;
+    top: 595px;
+
+}
+
+#avisoImg{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+
+    margin: 0 2px 0 0;
+}
+
+.aviso p{
+    width: 70%;
+    height: 16px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 150%;
+
+    color: grey;
+    opacity: 0.8;
+}
+
+#encriptar{
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 15%;
+    height: 45px;
+    left: 10%;
+    top: 644px;
+
+
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+#encriptar p{
+    width: 100%;
+    height: 5px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1px;
+    text-align: center;
+
+    color: #ffffff;
+
+}
+
+#desencriptar{
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 15%;
+    height: 45px;
+    left: 27%;
+    top: 644px;
+
+    background-color: #F3F5FC;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+#desencriptar p{
+    width: 100%;
+    height: 5px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1px;
+    text-align: center;
+
+    color: #0A3871;
+
+}
+
+#resultado{
+    position: absolute;
+    width: 30.6%;
+    height: 609px;
+    left: 64%;
+    top: 10%;
+    background-color: #ffffff;
+    box-shadow: 0px 24px 32px -8px rgb(0, 0, 0.88);
+    border-radius: 32px;
+    padding: 18px;
+}
+
+.esperandoTexto{
+    position: absolute;
+    width: 18%;
+    height: 38%;
+    left: 70.75%;
+    top: 26%;
+
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+
+    text-align: center;
+
+    box-sizing: border-box;
+    border: 2px solid #0A3871;
+    border-radius: 30px;
+}
+
+.esperandoTexto h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0A3871;
+}
+
+.esperandoTexto p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #0A3871;
+}
+
+#copiar{
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 25%;
+    height: 45px;
+    left: 69%;
+    top: 644px;
+
+    background-color: #ffffff;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    transition: 1s all;
+    cursor: pointer;
+
+    visibility: hidden;
+}
+
+#copiar p{
+    width: 100%;
+    height: 5px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1px;
+    text-align: center;
+
+    color: #0A3871;
+
+}
+
+.boton:hover{
+    transform: scale(1.2);
+}
+
+footer{
+    text-align: center;
+    background-color: #0A3871;
+    padding: 40px;
+    margin: 10% 0 0 0;
+}
+
+.copyright, .datosPersonales{
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px;
+}
+
+@media screen and (max-width:940px) {
+    h1{
+        text-align: center;
+    }
+
+    .caja, .input, .botones, .output{
+        width: auto;
+    }
+
+    .esperandoTexto{
+        width: 25%;
+        height: 38%;
+        left: 68%;
+    }
+}

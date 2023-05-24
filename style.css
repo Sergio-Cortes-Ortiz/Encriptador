@@ -9,7 +9,7 @@ header{
 }
 
 .caja{
-    width: 940px;
+    width: 100%;
     position: relative;
     margin: 0 auto;
     text-align: center;
@@ -263,5 +263,83 @@ footer{
         width: 25%;
         height: 38%;
         left: 68%;
+    }
+
+    #desencriptar{
+        padding: 24px 15px;
+    }
+}
+
+@media screen and (max-width:415px) {
+    h1{
+        text-align: center;
+    }
+
+    .caja, .input, .botones, .output{
+        width: auto;
+    }
+    .input{
+        height: 650px;
+    }
+
+    #textoOriginal{
+        display: block;
+        padding: 10px 25px;
+        width: 85%;
+        height: 250px;
+    }
+
+    .aviso{
+    position: absolute;
+    width: 50%;
+    height: 16px;
+    left: 8.8%;
+    top: 34%;
+    }
+
+    #encriptar{  
+        position: absolute;
+        width: 30%;
+        height: 45px;
+        left: 10%;
+        top: 40%;
+    
+    }
+
+    #desencriptar{
+        position: absolute;
+        width: 30%;
+        height: 45px;
+        left: 46%;
+        top: 40%;
+    }
+
+    #resultado{
+        position: absolute;
+        width: 85%;
+        height: 30%;
+        left: 5px;
+        top: 50%;
+    }
+
+    .esperandoTexto{
+        position: absolute;
+        width: 55%;
+        height: 31%;
+        left: 21%;
+        top: 51.5%;
+    }
+
+    #copiar{
+        position: absolute;
+        width: 52%;
+        height: 45px;
+        left: 24%;
+        top: 76%;
+    }
+
+    footer{
+        height: 60px;
+        padding: 20px;
     }
 }
